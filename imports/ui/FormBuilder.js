@@ -42,17 +42,19 @@ const DroppableFormArea = ({ onDrop, fields }) => {
       {fields.length === 0 && <p className="text-muted">Drag elements here...</p>}
       {fields.map((field) => (
         <div key={field.id} className="mb-3">
-          <label className="fw-bold">{field.label}</label>
+          <label className="fw-bold">
+            {field.label} {field.required && <span className="text-danger">*</span>}
+          </label>
           {field.type === "textarea" ? (
-            <textarea className="form-control"></textarea>
+            <textarea className="form-control" required={field.required}></textarea>
           ) : field.type === "select" ? (
-            <select className="form-control">
+            <select className="form-control" required={field.required}>
               {field.options.map((option, i) => (
                 <option key={i} value={option}>{option}</option>
               ))}
             </select>
           ) : (
-            <input type={field.type} className="form-control" />
+            <input type={field.type} className="form-control" required={field.required} />
           )}
         </div>
       ))}
@@ -66,17 +68,19 @@ const FormBuilder = () => {
 
   const handleDrop = (field) => {
     const label = prompt("Enter label for this field:", field.label);
-    if (label) {
-      const newField = { ...field, label, id: uuidv4() };
+    if (!label) return;
 
-      // If it's a select field, ask for options
-      if (field.type === "select") {
-        const optionsInput = prompt("Enter comma-separated options:", "Option 1, Option 2, Option 3");
-        newField.options = optionsInput ? optionsInput.split(",").map(opt => opt.trim()) : [];
-      }
+    const isRequired = window.confirm("Is this field required?");
 
-      setFields((prevFields) => [...prevFields, newField]);
+    const newField = { ...field, label, required: isRequired, id: uuidv4() };
+
+    // If it's a select field, ask for options
+    if (field.type === "select") {
+      const optionsInput = prompt("Enter comma-separated options:", "Option 1, Option 2, Option 3");
+      newField.options = optionsInput ? optionsInput.split(",").map(opt => opt.trim()) : [];
     }
+
+    setFields((prevFields) => [...prevFields, newField]);
   };
 
   const availableFields = [
