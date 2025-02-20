@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meteor App</title>
+  
+  <!-- Inject Meteor Runtime Config -->
+  <script>
+    window.__meteor_runtime_config__ = {
+      ROOT_URL: '/',  // Change to your server URL if deployed
+      DDP_DEFAULT_CONNECTION_URL: '/',  // Meteor's WebSocket connection (if needed)
+      meteorEnv: {}
+    };
+  </script>
+
+  <!-- Include Head HTML -->
+  <script>
+    fetch('head.html').then(response => response.text()).then(html => {
+      document.head.innerHTML += html;
+    });
+  </script>
+
+  <!-- Load the compiled CSS -->
+  <link rel="stylesheet" href="9b9734de1c2f9944f0ce440f2730111eab851742.css">
+</head>
+<body>
+
+  <!-- Include Body HTML -->
+  <script>
+    fetch('body.html').then(response => response.text()).then(html => {
+      document.body.innerHTML += html;
+    });
+  </script>
+
+  <!-- Load the Meteor Client Bundle -->
+  <script src="12143ebfeafe35e0f06b21f50ed852c6bd352260.js"></script>
+
+</body>
+</html>

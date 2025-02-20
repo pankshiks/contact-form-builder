@@ -1,0 +1,117 @@
+{
+  "format": "web-program-pre1",
+  "manifest": [
+    {
+      "path": "12143ebfeafe35e0f06b21f50ed852c6bd352260.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/12143ebfeafe35e0f06b21f50ed852c6bd352260.js?meteor_js_resource=true",
+      "size": 990430,
+      "hash": "12143ebfeafe35e0f06b21f50ed852c6bd352260",
+      "sri": "1wIIPY+iPlAB2dJZ85UOutwT3uCXFRCstNvdV7/sM94Pwbmrx198fXzIPJv2DmROXW0+3fKKiVX/x0EOmShP0w=="
+    },
+    {
+      "path": "12143ebfeafe35e0f06b21f50ed852c6bd352260.stats.json",
+      "where": "client",
+      "type": "json",
+      "cacheable": true,
+      "url": "/12143ebfeafe35e0f06b21f50ed852c6bd352260.stats.json?meteor_js_resource=true",
+      "size": 23953,
+      "hash": "1ba1b4f131a618cbae1d828bdc0fc03665e17572",
+      "sri": "k88L70sf/I6fgE/O5oeZVw3AmtQvT0DUKv9NAiBB9YBZGLMQPePkr9Fq+Qt2oTD/tKGATpl9fDT1fwE4MPlMkg=="
+    },
+    {
+      "path": "9b9734de1c2f9944f0ce440f2730111eab851742.css",
+      "where": "client",
+      "type": "css",
+      "cacheable": true,
+      "url": "/9b9734de1c2f9944f0ce440f2730111eab851742.css?meteor_css_resource=true",
+      "size": 119619,
+      "hash": "9b9734de1c2f9944f0ce440f2730111eab851742",
+      "sri": "mxVCzv1wdlhVqeK3bj7joB7f328/G2PZ4uXxm6pEOWihQUD9WjrZ9uBsqqT8093pfCRt2Pkzz6I4dS0iPNz4FA=="
+    },
+    {
+      "path": "packages/promise/promise.d.ts",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/promise/promise.d.ts",
+      "size": 633,
+      "hash": "4aa461da7ad90c74a51ddfccc84b055fc0403119",
+      "sri": "6MVw86BmnkmTtXXlCxaH8k7xIUcMZK4O57Nnu82uI5MJT9Fbru7Yv71SuHx+giKUM9wkRs7WkpqPWjADS+U2qw=="
+    },
+    {
+      "path": "packages/tracker/tracker.d.ts",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/tracker/tracker.d.ts",
+      "size": 6096,
+      "hash": "93ebe1d7d6aed2b029129079014e3ebfd5e8bb8c",
+      "sri": "D7pwjdFz5YPTxAyDXrqMNZ9v65eWU+XZ8ASp8aLJaTSkoBScGaLOCxlnSzLKyfsYugreqjaynnaiUGpNhW/ldw=="
+    },
+    {
+      "path": "packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.eot",
+      "size": 20127,
+      "hash": "fdefb04bdd78ef36598d9c76678991896afd4681",
+      "sri": "78kQyWufXFjqEahFd89grplVA7HuZwu359SkE7dAN2mSD4JgC1gfG9TuA9ccdsFSVfCXLtZq2WlIe1pAQ/RyxA=="
+    },
+    {
+      "path": "packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.svg",
+      "size": 108738,
+      "hash": "714c8aa3ab61ae93c1e1efe8a2738e6f36508bde",
+      "sri": "wud+qzJ68UaQl8MbwNr4IMBmsCIgWdj/Ds68qXS2K3U16W8fNWZDsrYnY6kk0EDkrJsgl+HeLCIiZBH96HI3Qw=="
+    },
+    {
+      "path": "packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.ttf",
+      "size": 45404,
+      "hash": "4fb413597d028e8b079c10dccad4a20590a42688",
+      "sri": "KwZuBlBu8g1paY03zexVIXbvP2ShFRqZodAtctOc4SxP9hbcCKr7LMrqEu/XofRrcBUWpVnlaQxXo0sSduiCJg=="
+    },
+    {
+      "path": "packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.woff",
+      "size": 23424,
+      "hash": "f96aefe5353b8560b49a55d4a311979c7e67068d",
+      "sri": "9TZqslWv7+P+BhUOhQnndrVhj/UP4+D6jk1xXWRbHkTd860YXiHfGiduCLNwf1WGbLKoPS8yWlaIX8uOV6dKZw=="
+    },
+    {
+      "path": "packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.woff2",
+      "size": 18028,
+      "hash": "3e4284be2fe535fb57049c3994295baa0abbdb66",
+      "sri": "OBGAT1bsPILwvvNd4KklDlRqHjV/tZ4nhPYQ1jj+w1Wie0gOP3liQ8Dj03Q74+rdqPkGTCtbSVd+FrfkDvzbgw=="
+    },
+    {
+      "path": "head.html",
+      "where": "internal",
+      "type": "head",
+      "hash": "0bc255ab809673400feeb83b0f754c846eb4c951"
+    },
+    {
+      "path": "body.html",
+      "where": "internal",
+      "type": "body",
+      "hash": "33a76f2b4c30f6e44559d748578e1b43c573b579"
+    }
+  ]
+}
