@@ -59,7 +59,10 @@ const FormBuilder = () => {
   const [fields, setFields] = useState([]);
 
   const handleDrop = (field) => {
-    setFields((prevFields) => [...prevFields, { ...field, id: uuidv4() }]);
+    const label = prompt("Enter label for this field:", field.label);
+    if (label) {
+      setFields((prevFields) => [...prevFields, { ...field, label, id: uuidv4() }]);
+    }
   };
 
   const availableFields = [
