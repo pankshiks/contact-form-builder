@@ -45,6 +45,12 @@ const DroppableFormArea = ({ onDrop, fields }) => {
           <label className="fw-bold">{field.label}</label>
           {field.type === "textarea" ? (
             <textarea className="form-control"></textarea>
+          ) : field.type === "select" ? (
+            <select className="form-control">
+              {field.options.map((option, i) => (
+                <option key={i} value={option}>{option}</option>
+              ))}
+            </select>
           ) : (
             <input type={field.type} className="form-control" />
           )}
@@ -61,7 +67,15 @@ const FormBuilder = () => {
   const handleDrop = (field) => {
     const label = prompt("Enter label for this field:", field.label);
     if (label) {
-      setFields((prevFields) => [...prevFields, { ...field, label, id: uuidv4() }]);
+      const newField = { ...field, label, id: uuidv4() };
+
+      // If it's a select field, ask for options
+      if (field.type === "select") {
+        const optionsInput = prompt("Enter comma-separated options:", "Option 1, Option 2, Option 3");
+        newField.options = optionsInput ? optionsInput.split(",").map(opt => opt.trim()) : [];
+      }
+
+      setFields((prevFields) => [...prevFields, newField]);
     }
   };
 
@@ -69,6 +83,8 @@ const FormBuilder = () => {
     { type: "text", label: "Text Input" },
     { type: "email", label: "Email Input" },
     { type: "textarea", label: "Textarea" },
+    { type: "date", label: "Date Input" },
+    { type: "select", label: "Dropdown", options: ["Option 1", "Option 2", "Option 3"] },
   ];
 
   return (
@@ -83,7 +99,7 @@ const FormBuilder = () => {
           </div>
         </div>
         <div className="col-md-8">
-          <h4 className="fw-semibold mb-3">Form Builder</h4>
+          <h4 className="fw-semibold mb-3">Contact Form Builder</h4>
           <DroppableFormArea onDrop={handleDrop} fields={fields} />
         </div>
       </div>
